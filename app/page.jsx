@@ -5,7 +5,7 @@ export default function Home(){
     <main className="min-h-dvh bg-[url('/bg.jpg')] bg-no-repeat bg-center bg-cover">
       <section className="min-h-dvh bg-black/60 flex items-center justify-center">
         <div className="lg:w-1/2 text-white flex flex-col gap-10 items-center p-3">
-          <h1 className="md:text-6xl text-4xl font-black text-center">Learn, Teach, Connect, and Grow Your Skills <span className="text-purple-700 italic">at Zero Cost</span>.</h1>
+          <h1 className="md:text-6xl text-4xl font-black text-center">Learn, Teach, Connect, and Grow Your Skills <span className="text-purple-700 italic">at Zero Cost </span>.</h1>
           <p className="text-xl font-light text-center">
             <span className="text-purple-800 underline font-bold text-2xl">SkillXchanger </span> 
             is a free skill swap and sharing platform where students seeking affordable learning opportunities, freelancers looking to expand skillsets, youths in underserved communities, tech enthusiasts, individuals willing to teach or mentor others and curious minds connect to exchange skills, share knowledge, collaborate and learn faster — without paying.

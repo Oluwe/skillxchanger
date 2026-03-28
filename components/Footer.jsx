@@ -21,30 +21,29 @@ export default function Footer() {
 
       {/* Copyright Line */}
       <div className="text-center text-sm sm:text-base md:flex-1 border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pb-0 md:px-6 transition-colors duration-300 hover:text-blue-600">
-        &copy; {new Date().getFullYear()} SkillXchanger. All rights reserved  Developed by{" "}
+        &copy; {new Date().getFullYear()} SkillXchanger. All rights reserved | Developed by{" "}
         <a
           href="https://www.linkedin.com/in/ernestemeka25"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
-          Ernest Chukwuemeka
+          Ernest
         </a>
       </div>
 
       {/* Quick Links */}
-      <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-5 text-sm text-gray-700 justify-center md:flex-1 border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pb-0 md:px-6">
-        <Link href={"#"} className="hover:text-blue-600 transition-colors duration-300">Chat with Us</Link>
-        <Link href={"#"} className="hover:text-blue-600 transition-colors duration-300">Terms of Service</Link>
-        <Link href={"#"} className="hover:text-blue-600 transition-colors duration-300">Privacy Policy</Link>
-      </div>
+      <div className="flex items-center gap-5 text-sm max-md:flex-col">
+                <Link href={"#"}> Chat with Us</Link>
+                <Link href={"#"}> Terms of Service</Link>
+                <Link href={"#"}> Privacy Policy</Link>
+            </div>
 
-      {/* Social Icons */}
-      <div className="flex items-center gap-4 sm:gap-5 text-2xl text-gray-700 justify-center md:flex-1">
-        <FaFacebook className="hover:text-blue-600 transition-transform duration-300 hover:scale-110"/>
-        <FaYoutube className="hover:text-red-600 transition-transform duration-300 hover:scale-110"/>
-        <FaInstagram className="hover:text-pink-500 transition-transform duration-300 hover:scale-110"/>
-      </div>
+            <div className="flex items-center gap-5 text-2xl text-gray-700">
+                <FaFacebook />
+                <FaYoutube />
+                <FaInstagram/>
+            </div>
 
     </main>
   )
