@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1777013584445-tmivuihq",
+    "userId": "ernestchukwuemeka25@gmail.com",
+    "type": "offer",
+    "skillName": "Web Development ",
+    "description": "Web Development in React and Next.JS",
+    "category": "Technology",
+    "userContact": {
+      "name": "Ernest",
+      "email": "ernestchukwuemeka25@gmail.com",
+      "phone": "",
+      "youtube": "https://youtube.com/@heartstreamy",
+      "whatsapp": "+2348090883548",
+      "linkedin": "http://www.linkedin.com/in/ernestemeka25",
+      "instagram": "http://www.instagra.com/ernestemeka25"
+    },
+    "createdAt": "2026-04-24T06:53:04.445Z"
+  }
+]

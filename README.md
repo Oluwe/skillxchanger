@@ -1,3 +1,38 @@
+# SkillXchanger
+
+SkillXchanger is a free peer-to-peer skill exchange platform built with Next.js, React, and Tailwind CSS. It enables users to teach, learn, and connect at zero cost.
+
+## Features
+
+- Authentication with NextAuth (Google provider)
+- Post, browse, and filter skills
+- Responsive, accessible UI
+- Server-side and client-side validation
+- Toast notifications for user feedback
+- SEO and Open Graph meta tags for sharing
+
+## API Endpoints
+
+- `POST /api/skills` — Create a new skill (requires authentication)
+  - Required fields: `type` ("offer" or "wanted"), `skillName` (min 3 chars), `description` (min 10 chars), `category` (non-empty)
+- `GET /api/skills` — List all skills
+
+## Contributing
+
+1. Fork the repo and clone it locally
+2. Create a new branch for your feature or fix
+3. Follow the code style and conventions (see `.github/copilot-instructions.md`)
+4. Ensure accessibility and SEO best practices
+5. Submit a pull request with a clear description
+
+## Accessibility & SEO
+
+- All interactive elements are keyboard accessible and have ARIA labels
+- Focus states are visible
+- Open Graph and Twitter meta tags are included for better sharing
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

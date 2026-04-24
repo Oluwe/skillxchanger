@@ -5,46 +5,64 @@ import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <main className="flex flex-col md:flex-row md:items-center md:justify-between border-t border-gray-300 px-4 sm:px-6 md:px-10 py-4 sm:py-6 space-y-4 md:space-y-0 md:space-x-6">
+    <footer className="bg-gradient-to-br from-slate-100 via-white to-indigo-100 border-t border-white/60">
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        <div className="rounded-[2rem] border border-white/80 bg-white/90 p-8 shadow-2xl backdrop-blur-xl">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
-      {/* Logo Section */}
-      <div className="flex items-center gap-2 justify-center md:justify-start md:flex-1 border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pb-0 md:pr-6 transition-all duration-300 hover:scale-105">
-        <Image
-          src={"/logo.png"}
-          alt="logo"
-          width={700}
-          height={700} 
-          className="w-16 h-16 sm:w-20 sm:h-20"
-        />  
-        <p className="text-2xl sm:text-3xl text-stone-800 font-bold">skillXchanger</p>          
-      </div>
+            {/* Logo Section */}
+            <Link href="/" className="flex items-center gap-3 justify-center md:justify-start group">
+              <div className="rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 p-2 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-white font-bold text-lg">SX</span>
+              </div>
+              <p className="text-xl sm:text-2xl text-slate-800 font-semibold group-hover:text-indigo-600 transition-colors">
+                SkillXchanger
+              </p>
+            </Link>
 
-      {/* Copyright Line */}
-      <div className="text-center text-sm sm:text-base md:flex-1 border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pb-0 md:px-6 transition-colors duration-300 hover:text-blue-600">
-        &copy; {new Date().getFullYear()} SkillXchanger. All rights reserved | Developed by{" "}
-        <a
-          href="https://www.linkedin.com/in/ernestemeka25"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Ernest
-        </a>
-      </div>
-
-      {/* Quick Links */}
-      <div className="flex items-center gap-5 text-sm max-md:flex-col">
-                <Link href={"#"}> Chat with Us</Link>
-                <Link href={"#"}> Terms of Service</Link>
-                <Link href={"#"}> Privacy Policy</Link>
+            {/* Copyright Line */}
+            <div className="text-center md:flex-1 text-slate-600">
+              <p className="text-sm sm:text-base leading-6">
+                &copy; {new Date().getFullYear()} All rights reserved | Developed with ❤️ by{" "}
+                <a
+                  href="https://www.linkedin.com/in/ernestemeka25"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-600 hover:text-sky-700 font-medium transition-colors"
+                >
+                  Ernest.C.
+                </a>
+              </p>
             </div>
 
-            <div className="flex items-center gap-5 text-2xl text-gray-700">
-                <FaFacebook />
-                <FaYoutube />
-                <FaInstagram/>
+            {/* Quick Links and Social */}
+            <div className="flex flex-col md:flex-row items-center gap-6 md:flex-1 md:justify-end">
+              <div className="flex flex-wrap items-center gap-4 text-sm text-slate-700">
+                <Link href="#" className="hover:text-sky-600 transition-colors font-medium">
+                  Chat with Us
+                </Link>
+                <Link href="#" className="hover:text-sky-600 transition-colors font-medium">
+                  Terms of Service
+                </Link>
+                <Link href="#" className="hover:text-sky-600 transition-colors font-medium">
+                  Privacy Policy
+                </Link>
+              </div>
+              <div className="flex items-center gap-4 text-xl text-slate-600">
+                <a href="#" className="hover:text-sky-600 transition-colors hover:scale-110">
+                  <FaFacebook />
+                </a>
+                <a href="#" className="hover:text-sky-600 transition-colors hover:scale-110">
+                  <FaYoutube />
+                </a>
+                <a href="#" className="hover:text-sky-600 transition-colors hover:scale-110">
+                  <FaInstagram />
+                </a>
+              </div>
             </div>
-
-    </main>
+          </div>
+        </div>
+      </div>
+    </footer>
   )
 }
